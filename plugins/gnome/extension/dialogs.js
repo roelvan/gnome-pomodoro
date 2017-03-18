@@ -593,7 +593,7 @@ const PomodoroEndDialog = new Lang.Class({
                 this._eventY = y;
 
                 if (distance > MOTION_DISTANCE_TO_CLOSE * MOTION_DISTANCE_TO_CLOSE) {
-                    this.close(true);
+                    // this.close(true);
                 }
 
                 break;
@@ -606,7 +606,7 @@ const PomodoroEndDialog = new Lang.Class({
                         return Clutter.EVENT_PROPAGATE;
 
                     default:
-                        this.close(true);
+                        // this.close(true);
                         break;
                 }
 
@@ -614,7 +614,7 @@ const PomodoroEndDialog = new Lang.Class({
 
             case Clutter.EventType.BUTTON_PRESS:
             case Clutter.EventType.TOUCH_BEGIN:
-                this.close(true);
+                // this.close(true);
 
                 break;
         }
